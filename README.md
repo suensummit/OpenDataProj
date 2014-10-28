@@ -20,9 +20,9 @@ http://www.cpbl.com.tw/standing_year.aspx
 - 3.3 (1 - 2 days) Plotting & EDA
 - 3.4 (1 - 2 days) 針對球風/戰術進行分析
 - 3.5 (1 - 2 days) 產生 report (shiny or d3.js)
-- 3.6 (3 - 5 days) *optional*針對球團經營進行分析(行有餘力的話...)
+- 3.6 (3 - 5 days) **optional**針對球團經營進行分析(行有餘力的話...)
  
-## 队友（optional)
+## 队友
 
 [Etu] Wayne (3.1 - 3.2/3.3)
 [Etu] Summit (3.2/3.3 - 3.5)
