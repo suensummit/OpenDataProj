@@ -23,5 +23,6 @@ http://www.cpbl.com.tw/standing_year.aspx
 - 3.6 (3 - 5 days) *optional*針對球團經營進行分析(行有餘力的話...)
  
 ## 队友（optional)
+
 [Etu] Wayne (3.1 - 3.2/3.3)
 [Etu] Summit (3.2/3.3 - 3.5)
