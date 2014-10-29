@@ -1,0 +1,36 @@
+---
+title: "Hackathon (i) - The First Morning"
+author: "Summit Suen"
+date: "Wednesday, October 29, 2014"
+output: html_document
+---
+
+```{r}
+library(XML)
+url <- "http://www.cpbl.com.tw/stats_hr.aspx"
+tables <- readHTMLTable(url, stringAsFactors = FALSE, encoding = "utf8")
+
+```
+
+
+
+```{r, echo=FALSE}
+hr2014 <- tables[[1]]
+str(hr2014)
+library(ggplot2)
+qplot(as.numeric(hr2014$RBI))
+
+```
+
+
+```{r, warning=FALSE}
+names2 <- names(hr2014)
+names2[3] <- "GID"
+names2[7] <- "BatterTeam"
+names2[9] <- "PitcherTeam"
+names(hr2014) <- names2
+head(hr2014)
+
+m <- ggplot(hr2014, aes(x = as.numeric(GID), title="The HR Distribution of 2014 Season 中華職棒2014賽季逐場全壘打分布"))
+m + geom_density(aes(fill=factor(BatterTeam), alpha=0.01))
+```
