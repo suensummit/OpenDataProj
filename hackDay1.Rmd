@@ -31,6 +31,6 @@ names2[9] <- "PitcherTeam"
 names(hr2014) <- names2
 head(hr2014)
 
-m <- ggplot(hr2014, aes(x = as.numeric(GID), title="The HR Distribution of 2014 Season 中華職棒2014賽季逐場全壘打分布"))
+m <- ggplot(hr2014, aes(x = as.numeric(GID), title=" HR Distribution of 2014 Season 中華職棒2014賽季逐場全壘打分布"))
 m + geom_density(aes(fill=factor(BatterTeam), alpha=0.01))
 ```
