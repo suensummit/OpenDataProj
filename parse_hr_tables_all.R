@@ -20,3 +20,6 @@ for (i in 1:length(year)) {
 }
 
 View(hr_tables)
+
+remDr$close()
+pJS$stop()
