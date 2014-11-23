@@ -19,7 +19,7 @@ for (i in 1:length(year)) {
   hr_tables[i] <- readHTMLTable(src[[1]], stringAsFactors = FALSE, encoding = "utf8")
 }
 
-View(hr_tables)
+## View(hr_tables)
 
 remDr$close()
 pJS$stop()
