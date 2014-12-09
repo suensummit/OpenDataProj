@@ -1,4 +1,4 @@
-load("Documents//OpenDataProj//hr_tables.RData")
+load("~//Documents//OpenDataProj//hr_tables.RData")
 year <- seq(1990, 2014)
 for (i in 1:length(year)) {
 }
@@ -10,8 +10,10 @@ for (i in 1:length(year)) {
 }
 
 
-hrs <- filter(hr_tables[[1]], BATTERTEAM == "三商")
+hrs <- filter(hr_tables[[1]], BATTERTEAM == TEAMS[[1]])
+
+hrs_all <- sapply(hr_tables, mutate, )
 
 pat <- mutate(hr_tables[[1]], )
 
-patterns <- sapply(hr_tables, mutate())
+patterns <- sapply(hr_tables, mutate, )
