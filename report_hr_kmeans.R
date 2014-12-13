@@ -9,6 +9,16 @@ for (i in 1:length(year)) {
   TEAMS <- union(TEAMS, levels(hr_tables[[i]]$BATTERTEAM))
 }
 
+## 林仲秋
+Lin <- list()
+year <- seq(1990, 2014)
+for (i in 1:length(year)) {
+  temp <- hr_tables[[i]]
+  Lin <- rbind(Lin, filter(temp, temp$BATTER == "林仲秋"))
+}
+
+##
+
 
 hrs <- filter(hr_tables[[1]], BATTERTEAM == TEAMS[[1]])
 
