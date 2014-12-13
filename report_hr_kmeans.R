@@ -10,12 +10,19 @@ for (i in 1:length(year)) {
 }
 
 ## 林仲秋
-Lin <- list()
+NAME <- "林 仲 秋"
+NAME <- "張 泰 山"
+BatterHistory <- list()
 year <- seq(1990, 2014)
 for (i in 1:length(year)) {
-  temp <- hr_tables[[i]]
-  Lin <- rbind(Lin, filter(temp, temp$BATTER == "林仲秋"))
+  BatterHistory <- rbind(BatterHistory, filter(hr_tables[[i]], BATTER == NAME))
 }
+
+head(BatterHistory)
+
+fig <- ggplot(data = BatterHistory, aes(x = RBI, fill = factor(PITCHERTEAM)))
+fig + geom_bar(stat = "bin", position="dodge") + 
+  theme(text = element_text(family="Heiti TC Light"), plot.title = element_text(size = 26), legend.text = element_text(size = 20))
 
 ##
 
