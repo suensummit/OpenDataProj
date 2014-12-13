@@ -12,6 +12,7 @@ for (i in 1:length(year)) {
 ## 林仲秋
 NAME <- "林 仲 秋"
 NAME <- "張 泰 山"
+NAME <- "陳 金 鋒"
 BatterHistory <- list()
 year <- seq(1990, 2014)
 for (i in 1:length(year)) {
